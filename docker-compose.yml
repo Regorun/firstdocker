@@ -5,7 +5,7 @@ networks:
 services:
     frontend:
         image: webuser21/jrnginx:1.0.0
-        container_name: jrnginx2
+        container_name: jrnginx
         networks:
             - db-network
         ports:
@@ -13,7 +13,7 @@ services:
     
     middleware:
         image: webuser21/jrnode:1.0.0
-        container_name: jrnode2
+        container_name: jrnode
         networks:
             - db-network
         ports:
@@ -23,7 +23,7 @@ services:
     
     mongodb:
         image: mongo:8.2.9
-        container_name: jrmdb2
+        container_name: jrmdb
         networks:
             - db-network
         ports:
@@ -31,7 +31,7 @@ services:
     
     mongo-express:
         image: mongo-express:1.0.2
-        container_name: jrmdbe2
+        container_name: jrmdbe
         networks:
             - db-network
         ports:

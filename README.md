@@ -29,11 +29,15 @@ graph LR
 
 # Setup procedure
  
-1. Run docker-compose.yml file  
-`docker compose docker-compose.yml up`
-2. From browser go to localhost:3000 and enter username/password
+1. Run docker-compose.yml file \
+`docker compose up -d`
+[!NOTE] If '-d' is omitted, then all containers stop when exiting the terminal view.
+2. From browser enter username/password \
+`localhost:3000/login.html`
 3. Open another tab with localhost:8081 to view data in mongodb \
 `username:admin, password: pass`
+4. Stop with:
+`docker compose down`
 
 ### Built docker images are uploaded into Docker Hub
 ### Versions of the images used are mentioned in the Dockerfile
