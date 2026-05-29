@@ -39,5 +39,5 @@ If '-d' is omitted, then all containers stop when exiting the terminal view.
 4. Stop with:
 `docker compose down`
 
-### Built docker images are uploaded into [Link Text](https://hub.docker.com/repositories/webuser21 "Docker Hub")
+### Built docker images are uploaded into [Docker Hub](https://hub.docker.com/repositories/webuser21)
 ### Versions of the images used are mentioned in the Dockerfile
