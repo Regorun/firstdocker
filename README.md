@@ -30,7 +30,7 @@ graph LR
 # Setup procedure
  
 1. Run docker-compose.yml file \
-`docker compose up -d`
+`docker compose up -d` \
 [!NOTE] If '-d' is omitted, then all containers stop when exiting the terminal view.
 2. From browser enter username/password \
 `localhost:3000/login.html`
