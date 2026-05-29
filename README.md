@@ -31,7 +31,7 @@ graph LR
  
 1. Run docker-compose.yml file \
 `docker compose up -d` \
-[!NOTE] If '-d' is omitted, then all containers stop when exiting the terminal view.
+If '-d' is omitted, then all containers stop when exiting the terminal view.
 2. From browser enter username/password \
 `localhost:3000/login.html`
 3. Open another tab with localhost:8081 to view data in mongodb \
@@ -39,5 +39,5 @@ graph LR
 4. Stop with:
 `docker compose down`
 
-### Built docker images are uploaded into Docker Hub
+### Built docker images are uploaded into [Link Text](https://hub.docker.com/repositories/webuser21 "Docker Hub")
 ### Versions of the images used are mentioned in the Dockerfile
