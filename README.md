@@ -18,7 +18,7 @@ graph LR
 
     %% Styling
     style USER fill:#blue,stroke:#black,stroke-width:2px
-    style FE fill:#bbf,stroke:#33f,stroke-width:2px
-    style MID fill:#fbf,stroke:#f3f,stroke-width:2px
-    style BE fill:#fbb,stroke:#f33,stroke-width:2px
+    style FE fill:#blue,stroke:#black,stroke-width:2px
+    style MID fill:#blue,stroke:#black,stroke-width:2px
+    style BE fill:#blue,stroke:#black,stroke-width:2px
 ```
