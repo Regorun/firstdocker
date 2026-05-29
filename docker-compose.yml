@@ -1,0 +1,40 @@
+networks:
+    db-network:
+        driver: bridge
+        
+services:
+    frontend:
+        image: webuser21/jrnginx:1.0.0
+        container_name: jrnginx2
+        networks:
+            - db-network
+        ports:
+            - 3000:80
+    
+    middleware:
+        image: webuser21/jrnode:1.0.0
+        container_name: jrnode2
+        networks:
+            - db-network
+        ports:
+            - 5000:5000
+        depends_on:
+            - mongodb
+    
+    mongodb:
+        image: mongo:8.2.9
+        container_name: jrmdb2
+        networks:
+            - db-network
+        ports:
+            -  27017:27017
+    
+    mongo-express:
+        image: mongo-express:1.0.2
+        container_name: jrmdbe2
+        networks:
+            - db-network
+        ports:
+            - 8081:8081
+        environment:
+            - ME_CONFIG_MONGODB_SERVER=jrmdb
