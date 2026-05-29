@@ -35,5 +35,5 @@ graph LR
 3. Open another tab with localhost:8081 to view data in mongodb \
 `username:admin, password: pass`
 
-[1^]: Built docker images are uploaded into Docker Hub
-: Versions of the images used are mentioned in the Dockerfile
+### Built docker images are uploaded into Docker Hub
+### Versions of the images used are mentioned in the Dockerfile
